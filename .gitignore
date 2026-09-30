@@ -24,6 +24,9 @@ yarn-error.log*
 .env.production.local
 
 .vercel
+.open-next
+.wrangler
+.dev.vars
 *.tsbuildinfo
 next-env.d.ts
 

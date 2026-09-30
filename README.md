@@ -138,13 +138,35 @@ Repository secrets:
 
 Do not store secrets in source.
 
+## Cloudflare deployment
+
+This is a **Next.js App Router** app (SSR, API routes, middleware). Cloudflare cannot treat it as a static site. `next build` writes `.next`, not `dist`, which is why a Pages deploy fails with `Output directory "dist" not found`.
+
+Use **Workers** (OpenNext), not a static Pages output directory.
+
+1. Push this repo (must include `wrangler.jsonc` and `open-next.config.ts`).
+2. In Cloudflare: **Workers & Pages → Create → Connect Git** for `GovJobMatch`.
+3. Settings:
+   - **Build command:** `npm run build` (runs `opennextjs-cloudflare build`)
+   - **Do not** set output directory to `dist`
+   - **Root directory:** `/` (repo root)
+4. Environment variables (same names as `.env.example`):
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   - `SUPABASE_SERVICE_ROLE_KEY` (secret, server only)
+   - `NEXT_PUBLIC_SITE_URL` = `https://<your-worker>.workers.dev` or your custom domain
+5. Deploy. Add that URL to Supabase Auth redirect URLs (`/auth/callback`).
+
+Local Workers preview: `npm run preview`. Direct deploy from your machine: `npm run deploy`.
+
 ## Vercel deployment
 
 1. Push the GitHub repo.
 2. Import the project on the [Vercel free hobby plan](https://vercel.com).
-3. Set the same env vars as `.env.example` (`SUPABASE_SERVICE_ROLE_KEY` as a **server** env var, not exposed to the browser).
-4. Set `NEXT_PUBLIC_SITE_URL` to `https://your-app.vercel.app`.
-5. Deploy. Add the production URL to Supabase Auth redirect URLs.
+3. Set the build command to `npm run build:next` (plain `next build`).
+4. Set the same env vars as `.env.example` (`SUPABASE_SERVICE_ROLE_KEY` as a **server** env var, not exposed to the browser).
+5. Set `NEXT_PUBLIC_SITE_URL` to `https://your-app.vercel.app`.
+6. Deploy. Add the production URL to Supabase Auth redirect URLs.
 
 No paid search, scrape, or email SaaS is required.
 
