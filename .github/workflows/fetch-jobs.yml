@@ -1,0 +1,36 @@
+name: Fetch jobs
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch-jobs:
+    name: Collect official recruitment notices
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install collector dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run job collector
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          PYTHONPATH: .
+        run: python -m scripts.jobs.run --source all

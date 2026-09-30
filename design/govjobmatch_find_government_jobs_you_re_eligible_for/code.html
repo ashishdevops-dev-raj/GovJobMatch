@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#c77f00", "on-error-container": "#93000a", "on-primary-fixed": "#011d35", "surface-container-low": "#eff4ff", "surface-container-highest": "#d3e4fe", "on-surface": "#0b1c30", "secondary": "#006c49", "on-secondary": "#ffffff", "surface-container-high": "#dce9ff", "surface-dim": "#cbdbf5", "secondary-container": "#6cf8bb", "background": "#f8f9ff", "on-tertiary": "#ffffff", "surface-container": "#e5eeff", "on-secondary-container": "#00714d", "error": "#ba1a1a", "error-container": "#ffdad6", "primary-fixed": "#d1e4ff", "on-tertiary-fixed": "#2a1700", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#002113", "surface": "#f8f9ff", "primary": "#001428", "tertiary-fixed-dim": "#ffb95f", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "inverse-primary": "#b0c9e8", "tertiary": "#1f1000", "tertiary-container": "#3b2200", "surface-variant": "#d3e4fe", "on-primary-fixed-variant": "#314863", "on-surface-variant": "#43474d", "on-primary-container": "#7991af", "on-error": "#ffffff", "on-primary": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed-variant": "#653e00", "primary-fixed-dim": "#b0c9e8", "on-secondary-fixed-variant": "#005236", "primary-container": "#0f2942", "secondary-fixed": "#6ffbbe", "on-background": "#0b1c30", "tertiary-fixed": "#ffddb8", "surface-tint": "#49607c", "secondary-fixed-dim": "#4edea3", "outline-variant": "#c3c6ce", "outline": "#74777e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem", "margin": "2rem", "space-xl": "2.5rem", "margin-sm": "1rem", "space-sm": "0.5rem", "gutter": "1.5rem", "gutter-sm": "1rem" }, "fontFamily": { "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "label-lg": ["Inter"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } }</script></head><body class="bg-background font-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full max-w-[1440px] mx-auto px-margin"><div class="h-16 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="GovJobMatch Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXzqeKcuEQP027TsLwmsM6CHmGCT9fIdHOh8mMsVosxglj1uc09mI1IXRgaUktS_ZFyzobU2c077n_qbj-z6JMzJbGwhQl_aZG9vqdwNGbu8jC_4q_llb0gKqSwq5a3c9kGlUucVnvU-fKiGu5zMIJ3221dhrCKlY-6yM2YroirK2GcJ9bZ7NvKwTpUBEWyIyQAuBrAyq3q5zeZsMYUiUaasIoOd_17_FeeuAjTpNGCrtmrJSxh1zsOL5X"/><span class="font-headline-md text-headline-md text-primary tracking-tight">GovJobMatch</span></a><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors py-space-xs text-primary font-bold" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="government-jobs" href="#">Government Jobs</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="categories" href="#">Categories</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs flex items-center gap-space-xs" data-path="eligibility-matcher" href="#">Eligibility Matcher</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="exams" href="#">Exams</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs relative" data-path="notifications" href="#">Notifications<span class="ml-1 px-1.5 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm leading-none">3</span></a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="saved-jobs" href="#">Saved Jobs</a></nav></div><div class="flex items-center gap-space-md"><button class="hidden md:flex items-center justify-between gap-space-md px-space-md py-space-xs bg-surface-container-low rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all text-left w-56 lg:w-64" type="button"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm">Search vacancies...</span></div><kbd class="px-1.5 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-[0_1px_2px_rgba(0,0,0,0.05)]">Ctrl+K</kbd></button><button aria-label="Notifications" class="relative p-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-sm py-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAktwx7P8A5VNFmwCIW3Vc_dR7NPX37Ml9ED06C2WAucc91A7R625n91oCKh_0kFqxifcLX5VXoTqGJtDD3TEWuRk0nAF6aG6XObHl-x-eMDBzxEvElx8pU7UBto2OV3Hnd_o17LPrGksroAPmp8gWWzUtgklpVLfSZlQ8Ntak5L6tSXh7b_oZasnCOyI7ER5ZGwmif5AicRCgMPTSdXXFxgEF-2idD_jTmIhbjcK5d0g5SYIYkn_7Ejw"/><div class="hidden sm:flex flex-col text-left"><div class="flex items-center gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Ashish</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-1 rounded">B.Tech CSE • 24y</span></div></div></div></div><div class="py-space-xs bg-surface-container-lowest flex items-center justify-between font-label-md text-label-md text-on-surface-variant"><nav aria-label="Breadcrumb" class="flex items-center gap-space-xs"><a class="hover:text-on-surface flex items-center gap-1" data-path="home" href="#"><span class="material-symbols-outlined text-[14px]">home</span><span>Portal</span></a><span class="material-symbols-outlined text-[12px]">chevron_right</span><span class="text-on-surface font-semibold">National Verification Feed</span></nav><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">All 28 States &amp; Central Gazettes Live</span></div></div></div></header><main class="w-full pt-16 bg-background"><div class="pt-8 max-w-[1440px] mx-auto px-margin min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO & LIVE MATCHER -->
+<section class="relative w-full pb-space-xl overflow-hidden">
+<!-- Subtle Ambient Glow -->
+<div class="absolute -top-32 -right-24 w-96 h-96 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 -left-20 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-center pt-space-xs">
+<!-- Left Column: Search & Value Proposition (7 cols) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 bg-surface-container-low text-secondary rounded-full w-fit shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide uppercase">AI-Assisted Statutory Gazettes Live</span>
+</div>
+<div class="space-y-space-sm">
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight leading-tight">
+            Find Government Jobs You’re <span class="text-secondary underline decoration-secondary-container decoration-4 underline-offset-4">Actually Eligible For</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Search Central and State Government jobs by qualification, age, state, category, branch, and experience. Get personalized eligibility results and apply directly through verified official recruitment portals.
+          </p>
+</div>
+<!-- Comprehensive Search Module -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-xl space-y-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm">
+<!-- Keyword search -->
+<div class="md:col-span-6 relative flex items-center">
+<span class="material-symbols-outlined text-outline absolute left-space-md">search</span>
+<input class="w-full h-11 pl-11 pr-space-md bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" placeholder="Search jobs, exams, departments (e.g. SSC CGL, RRB JE, B.Tech CSE)..." type="text"/>
+</div>
+<!-- State Selector -->
+<div class="md:col-span-3 relative flex items-center">
+<span class="material-symbols-outlined text-outline absolute left-space-sm text-[18px]">location_on</span>
+<select class="w-full h-11 pl-9 pr-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary appearance-none cursor-pointer">
+<option value="all">All India (Central)</option>
+<option selected="" value="bihar">Bihar (Home State)</option>
+<option value="up">Uttar Pradesh</option>
+<option value="delhi">Delhi NCT</option>
+<option value="maharashtra">Maharashtra</option>
+<option value="karnataka">Karnataka</option>
+<option value="rajasthan">Rajasthan</option>
+</select>
+<span class="material-symbols-outlined text-outline absolute right-space-sm text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Qualification Selector -->
+<div class="md:col-span-3 relative flex items-center">
+<span class="material-symbols-outlined text-outline absolute left-space-sm text-[18px]">school</span>
+<select class="w-full h-11 pl-9 pr-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary appearance-none cursor-pointer">
+<option selected="" value="btech">B.Tech / B.E.</option>
+<option value="grad">Graduate (Any)</option>
+<option value="12th">12th Intermediate</option>
+<option value="10th">10th Matric</option>
+<option value="diploma">Polytechnic Diploma</option>
+<option value="pg">Post Graduate / M.Sc</option>
+</select>
+<span class="material-symbols-outlined text-outline absolute right-space-sm text-[16px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Bottom Action strip -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-primary">Trending Now:</span>
+<button class="px-space-xs py-0.5 rounded bg-surface-container hover:bg-surface-container-high transition-colors">ISRO SC 2026</button>
+<button class="px-space-xs py-0.5 rounded bg-surface-container hover:bg-surface-container-high transition-colors">SSC CGL Tier-1</button>
+<button class="px-space-xs py-0.5 rounded bg-surface-container hover:bg-surface-container-high transition-colors">RRB JE Senior</button>
+</div>
+<button class="w-full sm:w-auto px-space-lg h-11 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-md flex items-center justify-center gap-space-xs transition-all active:scale-[0.98]">
+<span>Search 48,000+ Jobs</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Fast Eligibility Check Trigger -->
+<div class="flex flex-wrap items-center gap-space-md">
+<a class="relative group inline-flex items-center gap-space-sm px-space-lg py-space-sm rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all" data-path="eligibility-matcher" href="#">
+<span class="flex h-3 w-3 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+<span>Check My Eligibility (Free 2-Min Match)</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-hover:translate-x-1">bolt</span>
+</a>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[18px]">format_image_left</span>
+<span>No login required to view basic criteria</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Live Profile Preview (5 cols) -->
+<div class="xl:col-span-5 relative">
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-xl flex flex-col gap-space-md">
+<!-- Card Header & Candidate Dossier -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img alt="Candidate Avatar" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAktwx7P8A5VNFmwCIW3Vc_dR7NPX37Ml9ED06C2WAucc91A7R625n91oCKh_0kFqxifcLX5VXoTqGJtDD3TEWuRk0nAF6aG6XObHl-x-eMDBzxEvElx8pU7UBto2OV3Hnd_o17LPrGksroAPmp8gWWzUtgklpVLfSZlQ8Ntak5L6tSXh7b_oZasnCOyI7ER5ZGwmif5AicRCgMPTSdXXFxgEF-2idD_jTmIhbjcK5d0g5SYIYkn_7Ejw"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Ashish Kumar</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm">Active Profile</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">B.Tech CSE • Age: 24 • Fresher • Domicile: Bihar</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">127</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Matching Jobs</p>
+</div>
+</div>
+<!-- Matching Engine Breakdown Meter -->
+<div class="p-space-md bg-surface-container-low rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-semibold">Automated Eligibility Breakdown</span>
+<span class="text-secondary font-bold">65.3% Direct Match</span>
+</div>
+<!-- Segmented Progress Bar -->
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 65%" title="83 Directly Eligible"></div>
+<div class="bg-on-tertiary-container h-full" style="width: 23%" title="29 Check Details"></div>
+<div class="bg-outline-variant h-full" style="width: 12%" title="15 Ineligible"></div>
+</div>
+<!-- Metrics Pills -->
+<div class="grid grid-cols-3 gap-space-xs pt-1">
+<div class="p-space-xs bg-surface-container-lowest rounded-lg flex flex-col items-center text-center">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">83</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-secondary">check_circle</span>
+                  Direct Match
+                </span>
+</div>
+<div class="p-space-xs bg-surface-container-lowest rounded-lg flex flex-col items-center text-center">
+<span class="font-headline-sm text-headline-sm text-on-tertiary-container font-bold">29</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-on-tertiary-container">info</span>
+                  Verify Criteria
+                </span>
+</div>
+<div class="p-space-xs bg-surface-container-lowest rounded-lg flex flex-col items-center text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-bold">15</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-error">cancel</span>
+                  Over Age/Exp
+                </span>
+</div>
+</div>
+</div>
+<!-- Quick Filters applied to Ashish's query -->
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+              No GATE Required (41)
+            </span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">account_balance</span>
+              Central Govt (62)
+            </span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">payments</span>
+              Pay: ₹45,000 - ₹1.2L
+            </span>
+</div>
+<!-- Mini Top Matching Alert Preview -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-primary font-bold">
+                ISRO
+              </div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold leading-snug">Scientist / Engineer 'SC'</p>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+                  100% Eligible • CSE Branch Approved
+                </p>
+</div>
+</div>
+<span class="px-space-xs py-1 rounded bg-error-container text-error font-label-sm text-label-sm font-bold">Closing Soon</span>
+</div>
+<a class="w-full py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-lg text-label-lg text-center transition-colors flex items-center justify-center gap-1" data-path="eligibility-matcher" href="#">
+<span>Tune Profile Variables</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: LIVE METRICS & STATUTORY TRUST BAR -->
+<section class="w-full my-space-xl">
+<div class="w-full p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md max-w-md">
+<div class="w-14 h-14 rounded-2xl bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[32px]">hub</span>
+</div>
+<div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-xl text-headline-xl text-primary font-extrabold">48,290+</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">
+            Active official vacancies tracked across 120+ Central &amp; State recruitment boards.
+          </p>
+</div>
+</div>
+<!-- 4 Pillars -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md w-full lg:w-auto">
+<div class="flex items-center gap-space-xs p-space-sm bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[22px]">link</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">100% Official Links</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct NIC / Gov</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-sm bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[22px]">rule</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Rule Engine</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automated Criteria</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-sm bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[22px]">gavel</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Zero Fake Posts</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gazette Verified</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-sm bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[22px]">update</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Updated Hourly</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live RSS &amp; Scrapers</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: EXPLORE GOVERNMENT JOBS BY CATEGORY (16 Cards) -->
+<section class="w-full my-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="w-1.5 h-5 bg-secondary rounded-full"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Sovereign Categories</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Explore Government Recruitments</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Browse verified active opportunities classified by commission, stream, and basic qualifications.</p>
+</div>
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-primary hover:text-secondary transition-colors font-semibold group" data-path="categories" href="#">
+<span>View all 42 cadres</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<!-- 16 Grid Bento layout -->
+<div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-gutter">
+<!-- 1. SSC -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Staff Selection (SSC)</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">14,280 Vacancies</p>
+</div>
+</a>
+<!-- 2. UPSC -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Civil Services (UPSC)</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">1,240 Vacancies</p>
+</div>
+</a>
+<!-- 3. Railway RRB -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">train</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Railways (RRB / RRC)</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">18,500 Vacancies</p>
+</div>
+</a>
+<!-- 4. Banking & IBPS -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Banking &amp; IBPS</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">9,800 Vacancies</p>
+</div>
+</a>
+<!-- 5. Defence & Armed Forces -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Defence &amp; Armed Forces</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">6,400 Vacancies</p>
+</div>
+</a>
+<!-- 6. Police Recruitment -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">local_police</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Police &amp; Paramilitary</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">12,100 Vacancies</p>
+</div>
+</a>
+<!-- 7. PSU & Navratna -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">factory</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">PSU &amp; Navratna</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">4,150 Vacancies</p>
+</div>
+</a>
+<!-- 8. State Government -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">domain</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">State PSC &amp; Subordinate</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">22,300 Vacancies</p>
+</div>
+</a>
+<!-- 9. Teaching & TET -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Teaching &amp; State TET</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">15,900 Vacancies</p>
+</div>
+</a>
+<!-- 10. Technical & IT -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Technical &amp; NIC IT</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">5,420 Vacancies</p>
+</div>
+</a>
+<!-- 11. 10th Pass Jobs -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">10th Pass Matric</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">11,200 Vacancies</p>
+</div>
+</a>
+<!-- 12. 12th Pass Jobs -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">12th Intermediate</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">16,800 Vacancies</p>
+</div>
+</a>
+<!-- 13. Diploma & ITI -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">handyman</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Diploma &amp; ITI Trades</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">8,900 Vacancies</p>
+</div>
+</a>
+<!-- 14. Graduate Jobs -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Graduates (Any Stream)</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">31,400 Vacancies</p>
+</div>
+</a>
+<!-- 15. B.Tech / B.E. -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">developer_board</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">B.Tech / Engineering</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">7,650 Vacancies</p>
+</div>
+</a>
+<!-- 16. Medical & Healthcare -->
+<a class="group p-space-md bg-surface-container-lowest hover:bg-surface-container-low rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-36" data-path="government-jobs" href="#">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">health_and_safety</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[18px]">north_east</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Medical &amp; Nursing</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">3,800 Vacancies</p>
+</div>
+</a>
+</div>
+</section>
+<!-- SECTION 4: FEATURED TRENDING RECRUITMENTS (Job Cards) -->
+<section class="w-full my-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="w-1.5 h-5 bg-primary rounded-full"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Gazette Verified Active Calls</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Featured Trending Recruitments</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Live vacancies evaluated against your current browser session (B.Tech CSE, Age 24, General/OBC).</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sort by:</span>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-sm font-semibold">Highest Match Score</button>
+</div>
+</div>
+<!-- 4 Structured Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Card 1: SSC CGL 2026 -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-all flex flex-col justify-between gap-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center font-headline-sm text-primary font-bold">
+                SSC
+              </div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Advt. No. 04/2026-HQ</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Combined Graduate Level (CGL) 2026</h3>
+</div>
+</div>
+<!-- Match Badge -->
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shrink-0">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>100% Eligible</span>
+</div>
+</div>
+<!-- Metadata Tags -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-1">
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Total Vacancies</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">14,000+ Posts</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Qualification</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Any Degree</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Age Window</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">18 - 32 Yrs</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Pay Level</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">Level 4 - 8</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface-variant flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">check</span>
+              B.Tech CSE qualifies for Inspector, ASO &amp; Sub-Inspector cadres.
+            </span>
+<span class="text-on-surface font-semibold">Tier-1 in Dec 2026</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 font-label-md text-label-md text-error font-semibold">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+<span>Apply by: 15 Oct 2026</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-colors" href="#">Details</a>
+<a class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center gap-1 transition-all" href="https://ssc.gov.in" rel="noopener" target="_blank">
+<span>Apply Official</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 2: RRB Senior Section Engineer / JE -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-all flex flex-col justify-between gap-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center font-headline-sm text-primary font-bold">
+                RRB
+              </div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CEN 03/2026 Technical</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Senior Section Engineer / JE (IT &amp; Track)</h3>
+</div>
+</div>
+<!-- Match Badge -->
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shrink-0">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>100% Eligible</span>
+</div>
+</div>
+<!-- Metadata Tags -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-1">
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Total Vacancies</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">7,911 Posts</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Qualification</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">B.Tech / Diploma</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Age Window</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">18 - 36 Yrs</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Pay Matrix</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">Level 6 / 7</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface-variant flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">check</span>
+              JE (Information Tech) Cadre matched directly with B.Tech CSE.
+            </span>
+<span class="text-on-surface font-semibold">CBT-1 Multi-State</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 font-label-md text-label-md text-error font-semibold">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+<span>Apply by: 28 Oct 2026</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-colors" href="#">Details</a>
+<a class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center gap-1 transition-all" href="https://indianrailways.gov.in" rel="noopener" target="_blank">
+<span>Apply Official</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 3: ISRO Scientist/Engineer 'SC' -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-all flex flex-col justify-between gap-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center font-headline-sm text-primary font-bold">
+                ISRO
+              </div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ICRB/02/2026 National</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Scientist / Engineer 'SC' (Computer Science)</h3>
+</div>
+</div>
+<!-- Match Badge -->
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shrink-0">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>100% Eligible</span>
+</div>
+</div>
+<!-- Metadata Tags -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-1">
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Total Vacancies</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">325 Posts</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Cutoff Min</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">CSE 65%+</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Age Window</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">18 - 28 Yrs</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Salary Basic</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">₹56,100 (L-10)</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface-variant flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">check</span>
+              No GATE score mandatory. Written exam conducted independently by ICRB.
+            </span>
+<span class="text-on-surface font-semibold">Group 'A' Gazetted</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 font-label-md text-label-md text-error font-semibold">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+<span>Apply by: 04 Nov 2026</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-colors" href="#">Details</a>
+<a class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center gap-1 transition-all" href="https://isro.gov.in" rel="noopener" target="_blank">
+<span>Apply Official</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 4: IBPS PO XIV -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-all flex flex-col justify-between gap-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center font-headline-sm text-primary font-bold">
+                IBPS
+              </div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CRP PO/MT-XIV 2026</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Probationary Officer / Management Trainee</h3>
+</div>
+</div>
+<!-- Match Badge -->
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shrink-0">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>100% Eligible</span>
+</div>
+</div>
+<!-- Metadata Tags -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-1">
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Total Vacancies</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">4,455 Posts</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Qualification</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Any Graduate</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Age Window</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">20 - 30 Yrs</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Gross CTC</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">₹6.8L - ₹8.2L</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface-variant flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">check</span>
+              11 Participating Public Sector Banks across India.
+            </span>
+<span class="text-on-surface font-semibold">Online Prelims + Mains</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 font-label-md text-label-md text-error font-semibold">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+<span>Apply by: 22 Oct 2026</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-colors" href="#">Details</a>
+<a class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center gap-1 transition-all" href="https://ibps.in" rel="noopener" target="_blank">
+<span>Apply Official</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: HOW ELIGIBILITY MATCHING WORKS (Visual Flow) -->
+<section class="w-full my-space-xl p-space-xl bg-surface-container-low rounded-3xl shadow-sm">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<div class="inline-flex items-center gap-2 mb-2 px-space-sm py-1 bg-surface-container-lowest rounded-full shadow-sm text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+        Proprietary Gazette Mapping Algorithm
+      </div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">How GovJobMatch Eliminates Form Rejections</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+        Over 38% of candidate rejections happen due to minor qualification branch discrepancies or incorrect age cutoff calculations. Here is how our 4-step pipeline protects your application.
+      </p>
+</div>
+<!-- 4 Step Flow -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative">
+<!-- Step 1 -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col gap-space-sm relative">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary font-headline-md font-bold flex items-center justify-center">
+          01
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Specify Education &amp; Branch</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Input your major, degree equivalency, percentage, and graduation passing year for precise AI branch-matching.
+        </p>
+<div class="mt-auto pt-space-xs font-label-sm text-label-sm text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          AICTE &amp; UGC Mapped
+        </div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col gap-space-sm relative">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary font-headline-md font-bold flex items-center justify-center">
+          02
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Age &amp; Category Relaxations</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          The system evaluates exact reference dates (e.g. 01-Jan vs 01-Aug) with SC/ST/OBC/EWS/PwD age extensions.
+        </p>
+<div class="mt-auto pt-space-xs font-label-sm text-label-sm text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+          Statutory Cutoff Logic
+        </div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col gap-space-sm relative">
+<div class="w-12 h-12 rounded-xl bg-secondary text-on-secondary font-headline-md font-bold flex items-center justify-center">
+          03
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Instant Gazette Evaluation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Compare rules against 48,000+ active posts. Get categorized into "Directly Eligible", "Review Needed", or "Ineligible".
+        </p>
+<div class="mt-auto pt-space-xs font-label-sm text-label-sm text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+          Computed in &lt;180ms
+        </div>
+</div>
+<!-- Step 4 -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col gap-space-sm relative">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary font-headline-md font-bold flex items-center justify-center">
+          04
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Apply on Official NIC Portals</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Skip intermediary phishing links. One-click transit directly to the government department's secure application server.
+        </p>
+<div class="mt-auto pt-space-xs font-label-sm text-label-sm text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+          Zero Intermediary Fees
+        </div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: STATUTORY INTEGRITY & OFFICIAL PORTAL GUARANTEE -->
+<section class="w-full my-space-xl">
+<div class="relative overflow-hidden rounded-3xl bg-primary text-on-primary p-space-xl">
+<!-- Background SVG Accent Pattern -->
+<svg class="absolute right-0 bottom-0 opacity-10 pointer-events-none transform translate-x-12 translate-y-12" fill="none" height="400" viewbox="0 0 200 200" width="400">
+<circle cx="100" cy="100" r="80" stroke="currentColor" stroke-dasharray="8 8" stroke-width="8"></circle>
+<path d="M100 40V160M40 100H160" stroke="currentColor" stroke-width="8"></path>
+</svg>
+<div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-xl">
+<div class="space-y-space-sm max-w-2xl">
+<div class="inline-flex items-center gap-1 px- space-sm py-1 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span>Public Sector Trust Guarantee</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl font-bold leading-tight">
+            Never Fall for Counterfeit Job Notifications Again
+          </h2>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+            Every opening on GovJobMatch contains cryptographic hash verification against published Central and State Rajpatra gazettes. We do not charge application fees, alter recruitment parameters, or sell unsolicited test packages.
+          </p>
+<div class="flex flex-wrap gap-space-md pt-space-xs text-on-primary font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span>Direct NIC/Gov.in Destination URLs</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span>Statutory Gazette PDF Attached</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span>100% Free Public Utility</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-space-sm w-full lg:w-auto">
+<a class="px-space-xl py-3 rounded-xl bg-secondary-fixed text-on-secondary-fixed font-headline-sm text-headline-sm font-bold text-center hover:bg-secondary-fixed-dim transition-all shadow-lg active:scale-[0.98]" data-path="eligibility-matcher" href="#">
+            Run Instant Match Engine
+          </a>
+<a class="px-space-xl py-3 rounded-xl bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-on-primary font-label-lg text-label-lg text-center transition-colors" data-path="government-jobs" href="#">
+            Browse All 48,000+ Vacancies
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div></div></main><footer class="w-full bg-surface-container-lowest mt-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="max-w-[1440px] mx-auto px-margin py-space-xl"><div class="mb-space-lg p-space-md rounded-lg bg-surface-container-low flex flex-col md:flex-row items-start md:items-center gap-space-md justify-between"><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-secondary mt-0.5">verified_user</span><div><p class="font-label-lg text-label-lg text-on-surface font-semibold mb-1">Statutory Transparency Notice</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">GovJobMatch is an independent job discovery platform. It is not affiliated with or endorsed by the Government of India or any government recruitment organization. Always verify eligibility, dates, fees, vacancies, and application instructions from the official recruitment notification before applying.</p></div></div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-xs"><h4 class="font-label-lg text-label-lg text-primary font-bold mb-space-xs">Recruitment Portals</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Central Ministries</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">State Public Service (PSC)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Staff Selection (SSC)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Indian Railways (RRB)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Defence &amp; Paramilitary</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Public Sector Banks (IBPS)</a></div><div class="flex flex-col gap-space-xs"><h4 class="font-label-lg text-label-lg text-primary font-bold mb-space-xs">Popular Qualifications</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">10th Pass Matric Jobs</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">12th Intermediate Vacancies</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">ITI Trade Apprenticeships</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Polytechnic Diploma Posts</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">B.Tech / Engineering</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Graduate (Any Stream)</a></div><div class="flex flex-col gap-space-xs"><h4 class="font-label-lg text-label-lg text-primary font-bold mb-space-xs">Platform</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">About GovJobMatch</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Eligibility Engine</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Developer API</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Verified Gazette Sources</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Terms of Service</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5" href="#">Statutory Disclaimer</a></div><div class="flex flex-col gap-space-xs"><h4 class="font-label-lg text-label-lg text-primary font-bold mb-space-xs">Official Links</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5 flex items-center justify-between" href="https://upsc.gov.in" rel="noopener" target="_blank">UPSC Official<span class="material-symbols-outlined text-[14px]">open_in_new</span></a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5 flex items-center justify-between" href="https://ssc.gov.in" rel="noopener" target="_blank">SSC Official<span class="material-symbols-outlined text-[14px]">open_in_new</span></a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5 flex items-center justify-between" href="https://indianrailways.gov.in" rel="noopener" target="_blank">RRB Official<span class="material-symbols-outlined text-[14px]">open_in_new</span></a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-0.5 flex items-center justify-between" href="https://ibps.in" rel="noopener" target="_blank">IBPS Official<span class="material-symbols-outlined text-[14px]">open_in_new</span></a><div class="mt-space-md p-space-sm bg-surface-container-high rounded flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Official Sources Verified</span></div></div></div><div class="pt-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 GovJobMatch Platform. Statutory Information Discovery System.</p><div class="flex items-center gap-space-md"><div class="flex items-center p-0.5 rounded-full bg-surface-container-low"><button class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-[0_1px_2px_rgba(0,0,0,0.05)]" type="button">English</button><button class="px-space-sm py-0.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">हिंदी</button></div></div></div></div></footer></body></html>

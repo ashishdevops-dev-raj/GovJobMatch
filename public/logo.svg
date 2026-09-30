@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" width="240" height="56" fill="none">
+  <rect x="4" y="8" width="40" height="40" rx="10" fill="#0F2942"/>
+  <path d="M16 28L22 34L32 20" stroke="#10B981" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28 14H34C35.1 14 36 14.9 36 16V22" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="54" y="31" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#0F2942" letter-spacing="-0.5">GovJob<tspan fill="#0284C7">Match</tspan></text>
+  <text x="54" y="43" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#64748B" letter-spacing="0.4">ELIGIBILITY &amp; DISCOVERY PORTAL</text>
+</svg>
